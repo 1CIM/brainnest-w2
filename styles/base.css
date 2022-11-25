@@ -135,7 +135,23 @@ cursor: pointer;
 }
 
 .back-to-top-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 5rem;
+  right: 10rem;
+  border-radius: 50000px;
+  width: 8rem;
+  height: 8rem;
+  background-color: #3882F6;
+  border: none;
+}
 
+.back-to-top-btn > a {
+  text-decoration: none;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #F9FAF8;
 }
 
 footer {
