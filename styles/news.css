@@ -1,0 +1,42 @@
+.news {
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.news > article {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+
+.news article > img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: .2rem;
+}
+
+.news article h2 {
+  font-size: 3.6rem;
+}
+
+.news article p {
+  font-size: 1.8rem;
+}
+
+.news article button {
+  background-color: #3882F6;
+  border: none;
+  color: #F9FAF8;
+  margin: 1rem 0;
+}
+
+.divider {
+  border: .1rem solid #1F2937;
+  border-radius: 50%;
+}
+
+
+
