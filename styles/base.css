@@ -3,7 +3,9 @@
   src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
 }
 
-/* CSS base reset START  */
+:root {
+  scroll-behavior: smooth;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -33,10 +35,15 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* Base reset END */
-
 body > * {
   padding: 0 15%;
+}
+
+button {
+  border-radius: .7rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: .7rem 3.5rem;
 }
 
 button:hover {
@@ -54,7 +61,7 @@ header {
   background-color: #1F2937;
 }
 
-.navbar {
+#navbar {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
@@ -115,12 +122,8 @@ cursor: pointer;
 }
 
 .hero-text-box > button {
-  font-size: 1.8rem;
   background-color: #3882F6;
   border: none;
-  border-radius: .7rem;
-  width: 11rem;
-  height: 3.5rem;
   color: #F9FAF8;
   font-weight: 900;
 }
@@ -128,104 +131,11 @@ cursor: pointer;
 .hero-media-box img{
   width: 70rem;
   height: 30rem;
-}
-
-.random-info-section {
-  margin-bottom: 10rem;
-}
-
-.random-info-section > h2{
- font-size: 3.6rem;
- font-weight: 900;
- color: #1F2937;
- text-align: center;
- margin: 5rem 0;
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 6rem;
-}
-
-.info-element {
-  display: flex;
-  flex-direction: column;
-  width: 17rem;
-}
-
-.info-element > img {
-  border: .3rem solid #3882F6;
-  width: 17rem;
-  height: 17rem;
-  border-radius: 1rem;
   object-fit: cover;
 }
 
-.info-element > p {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-top: .5rem;
-}
+.back-to-top-btn {
 
-.quote-container {
-  background-color: #E5E7EB;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
-.quote-text-container {
-  margin: 0 22rem;
-}
-
-.quote {
-  font-size: 3.6rem;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.author {
-  font-size: 2.4rem;
-  font-weight: 900;
-  text-align: end;
-}
-
-.cta-section {
-  margin: 10rem;
-}
-
-.cta-container {
-  background-color: #3882F6;
-  border-radius: .5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 5rem 10rem;
-}
-
-.cta-text > h3 {
-  font-size: 2.4rem;
-  color: #F9FAF8;
-}
-
-.cta-text > p {
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #F9FAF8;
-}
-
-.cta-container > button {
-  font-size: 1.8rem;
-  font-weight: 900;
-  background-color: #3882F6;
-  border: solid #F9FAF8 .2rem;
-  color: #F9FAF8;
-  border-radius: 1rem;
-  height: 4rem;
-  padding: 0 4rem;
 }
 
 footer {
