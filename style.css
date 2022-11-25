@@ -39,6 +39,17 @@ body > * {
   padding: 0 15%;
 }
 
+button:hover {
+  transform: scale(1.04);
+  transition: ease-in .1s;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.96);
+  transition: ease-in .1s;
+}
+
 header {
   background-color: #1F2937;
 }
@@ -59,6 +70,10 @@ header {
   margin-right: 2.8rem;
 }
 
+.selected {
+border-bottom: #E5E7EB solid .2rem;
+}
+
 .nav-links ul li:last-child {
   margin-right: 0rem;
 }
@@ -67,6 +82,11 @@ header {
   color: #E5E7EB;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+border-bottom: #e5e7eb88 solid .2rem;
+cursor: pointer;
 }
 
 .hero {
@@ -125,12 +145,13 @@ header {
 .info-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
 }
 
 .info-element {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem;
   width: 17rem;
 }
 
@@ -180,6 +201,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   padding: 5rem 10rem;
 }
 
