@@ -27,14 +27,11 @@
 }
 
 .news article button {
-  background-color: #3882F6;
-  border: none;
-  color: #F9FAF8;
   margin: 1rem 0;
 }
 
 .divider {
-  border: .1rem solid #1F2937;
+  border: .1rem solid #E5e7eb;
   border-radius: 50%;
 }
 
