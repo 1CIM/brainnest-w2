@@ -1,20 +1,18 @@
 .random-info-section {
   margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
 }
 
-.random-info-section > h2{
+.random-info-section > h2 {
  font-size: 3.6rem;
  font-weight: 900;
  color: #1F2937;
  text-align: center;
- margin: 5rem 0;
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 6rem;
+ margin: 5rem 0 0 0;
+ width: 100%;
 }
 
 .info-element {
@@ -31,7 +29,7 @@
   object-fit: cover;
 }
 
-.info-element > p {
+.info-element figcaption {
   font-size: 1.8rem;
   text-align: center;
   margin-top: .5rem;
@@ -39,12 +37,9 @@
 
 .quote-container {
   background-color: #E5E7EB;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
-.quote-text-container {
-  margin: 0 22rem;
+  padding: 13rem 30rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote {
@@ -59,11 +54,8 @@
   text-align: end;
 }
 
-.cta-section {
-  margin: 10rem;
-}
-
 .cta-container {
+  margin: 10rem 30rem;
   background-color: #3882F6;
   border-radius: .5rem;
   display: flex;
