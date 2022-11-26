@@ -33,6 +33,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  color: #1F2937;
 }
 
 body > * {
@@ -44,6 +45,9 @@ button {
   font-size: 1.8rem;
   font-weight: 900;
   padding: .7rem 3.5rem;
+  background-color: #3882F6;
+  border: none;
+  color: #F9FAF8;
 }
 
 button:hover {
@@ -72,26 +76,22 @@ header {
   color: #F9FAF8;
 }
 
-.nav-links ul li {
-  display: inline;
-  margin-right: 2.8rem;
+.nav-links {
+  display: flex;
+  gap: 2.8rem;
 }
 
 .selected {
 border-bottom: #E5E7EB solid .2rem;
 }
 
-.nav-links ul li:last-child {
-  margin-right: 0rem;
-}
-
-.nav-links ul li a {
+.nav-links > a {
   color: #E5E7EB;
   font-size: 1.8rem;
   text-decoration: none;
 }
 
-.nav-links ul li a:hover {
+.nav-links > a:hover {
 border-bottom: #e5e7eb88 solid .2rem;
 cursor: pointer;
 }
@@ -121,13 +121,6 @@ cursor: pointer;
   letter-spacing: .08rem;
 }
 
-.hero-text-box > button {
-  background-color: #3882F6;
-  border: none;
-  color: #F9FAF8;
-  font-weight: 900;
-}
-
 .hero-media-box img{
   width: 70rem;
   height: 30rem;
@@ -143,8 +136,6 @@ cursor: pointer;
   border-radius: 50000px;
   width: 8rem;
   height: 8rem;
-  background-color: #3882F6;
-  border: none;
 }
 
 .back-to-top-btn > a {
@@ -156,9 +147,12 @@ cursor: pointer;
 
 footer {
   background-color: #1F2937;
-  color: #E5E7EB;
-  font-weight: 300;
+}
+
+.copyright {
   font-size: 1.8rem;
+  font-weight: 300;
+  color: #E5E7EB;
   text-align: center;
   padding: 3rem 0;
 }
